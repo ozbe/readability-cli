@@ -1,0 +1,9 @@
+{
+  "name": "readability",
+  "version": "0.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "jsdom": "^16.2.2",
+    "readability": "git://github.com:mozilla/readability.git"
+  }
+}
