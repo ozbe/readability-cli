@@ -1,3 +1,12 @@
+
+```
+$ curl -s https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/ | tr -d "\n\r" | node index.js
+```
+
+```
+$ rm -f read.html && curl -s https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/ | tr -d "\n\r" | node index.js | jq -r ".content" > read.html && open read.html
+```
+
 https://github.com/mozilla/readability
 https://github.com/jsdom/jsdom
 https://www.jetbrains.com/help/idea/running-and-debugging-node-js.html#

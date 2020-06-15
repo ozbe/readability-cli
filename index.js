@@ -1,8 +1,12 @@
 const Readability = require('readability');
 const JSDOM = require('jsdom').JSDOM;
-const doc = new JSDOM("<body>Here's a bunch of text</body>", {
-    url: "https://www.example.com/the-page-i-got-the-source-from",
+const readline = require('readline');
+
+const rl = readline.createInterface(process.stdin);
+
+rl.on('line', (input) => {
+    const doc = new JSDOM(input);
+    const reader = new Readability(doc.window.document);
+    const article = reader.parse();
+    console.log(JSON.stringify(article));
 });
-let reader = new Readability(doc.window.document);
-let article = reader.parse();
-console.log(article);
