@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Readability = require('readability');
 const JSDOM = require('jsdom').JSDOM;
 const readline = require('readline');
