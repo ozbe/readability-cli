@@ -6,7 +6,7 @@
     "readability": "./index.js"
   },
   "dependencies": {
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.5.0",
     "readability": "git://github.com:mozilla/readability.git"
   }
 }
